@@ -1,0 +1,440 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#logo {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  position: absolute;
+  background-color: rgba(0, 128, 128, 0.5);
+
+  border-radius: 50%;
+
+  left: -1.5px;
+
+  right: -1px;
+
+  width: 70px;
+
+  height: 70px;
+
+  border: 2px solid #fff;
+}
+
+.navbar {
+  background-color: rgba(11, 17, 30, 0.9);
+  /* Semi-transparent background */
+  color: black;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: large;
+  font-weight: bold;
+  /* Ensure the navbar appears above other elements */
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #fff;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #a395e9;
+  transform: translateY(-5px);
+  /* Move text up by 5 pixels on hover */
+}
+
+/* Homepage content */
+.content {
+  background-color: rgb(67, 127, 161);
+  background-image: url("https://media.istockphoto.com/id/1433731622/video/woman-relaxing-in-swimming-pool.jpg?s=640x640&k=20&c=wYfZhR4HPym-LqSsJjC2gXn06BoGvDXacdk5vDFS5gw=");
+  /* Replace with your image path */
+  background-size: cover;
+  background-position: right center;
+  /* Position the background image to the right center */
+  color: black;
+  text-align: center;
+  height: 100vh;
+  /* Adjust height to fill the viewport */
+  padding-top: 100px;
+  /* Ensure content is below the fixed navbar */
+  z-index: 1000;
+  background-repeat: no-repeat;
+}
+
+.info {
+  max-width: 200px;
+  margin: 0 auto;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  left: 50px;
+  /* Adjust this value as needed */
+}
+
+.info h1 {
+  color: #f0f0f0;
+  font-size: 45px;
+  margin-bottom: 20px;
+  text-align: left;
+  opacity: 0.9;
+}
+
+.info p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.info-btn {
+  position: relative;
+  display: inline-block;
+  background-color: #a395e9;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  /* Change to create a pill shape */
+  transition: background-color 0.3s;
+}
+
+.info-btn:hover {
+  background-color: #7d6cb3;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  margin: 10px;
+
+  font-weight: bold;
+}
+
+.rectangle-box {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.rectangle-box p {
+  margin-bottom: 0;
+}
+
+.contact-background {
+  color: #05011a;
+  position: relative;
+  background-color: #a395e9;
+  padding: 4rem 0;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb_oK3XKOL98FrobXVciXTBAar0nYbzOoTfQ&s");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar brand {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav link {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar brand {
+    margin-right: 0 !important;
+  }
+}
+
+.programs-background {
+  background-color: #f0f0f0;
+  padding: 100px 0;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.programs-background h2 {
+  color: #a395e9;
+  margin-bottom: 40px;
+}
+
+.programs-background p {
+  font-size: 18px;
+  color: #6c757d;
+}
+
+.col-md-4 img {
+  margin-bottom: 30px;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.col-md-4 img {
+  max-width: 100%;
+  height: auto;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.col-md-4 img:hover {
+  transform: scale(1.1);
+
+  opacity: 0.8;
+}
+
+.modal-dialog {
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav.ml-auto {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.modal-content {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  max-height: fit-content;
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal.show {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appointment-form {
+  max-width: 400px;
+  max-height: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.appointment-form label {
+  font-size: medium;
+  font-weight: 700;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.appointment-form input,
+.appointment-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.appointment-form button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.appointment-form button:nth-child(1) {
+  margin-bottom: 0.5rem;
+}
+
+.appointment-form button:hover {
+  background-color: #555;
+}
+
+#timing {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+}
+
+label[for="timing"] {
+  margin-top: 12px;
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+
+footer {
+  height: 6vh;
+
+  width: 60vw;
+  margin: 0 auto;
+}
+
+footer h1 {
+  height: 8vh;
+  display: grid;
+  place-items: center;
+  color: #0b111e;
+  text-align: center;
+  font-size: medium;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer h2 {
+  height: 5vh;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  display: grid;
+  place-items: center;
+  color: #0b111e;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+footer div {
+  height: 8vh;
+
+  width: 60vw;
+  max-width: 25vw;
+  margin: 0 auto;
+  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer div > a {
+  height: 2.9rem;
+  width: 2.9rem;
+  text-decoration: none;
+  border: 2px solid #05011a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+  border-radius: 50%;
+  background-color: #05011a;
+
+  margin-right: 1rem;
+}
+
+hr {
+  background-color: #a395e9;
+  border: 0.5px solid #9b8aec;
+}
+
+* {
+  background: #0000;
+  box-sizing: border-box;
+  font-family: newFont;
+  margin: 0;
+  padding: 0;
+}
